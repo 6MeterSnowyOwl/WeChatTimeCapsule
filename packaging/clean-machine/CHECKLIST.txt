@@ -1,0 +1,25 @@
+微信时间胶囊 v0.3.1 RC7 — Clean Machine Checklist
+==================================================
+
+Use Windows Sandbox, a clean Windows VM, or an independent Windows computer.
+Do not use a machine that has the project checkout or project virtual environment.
+Do not map or copy any real chat archive into the clean environment.
+
+1. Record whether Python is installed before copying the package.
+2. Verify the RC7 ZIP SHA-256 against SHA256SUMS.txt.
+3. Extract the ZIP completely.
+4. Double-click 微信时间胶囊.exe.
+5. Confirm the v0.3.1 RC7 window opens and Chinese text renders normally.
+6. Confirm no Qt plugin or missing-DLL error appears.
+7. Confirm the no-WeChat state gives readable guidance.
+8. Open Settings and About, then close them normally.
+9. Generate diagnostics and confirm a ZIP is created; do not share its contents.
+10. Exit normally and confirm no 微信时间胶囊.exe process remains.
+11. Run collect-result.ps1 with only the observed boolean results.
+
+NO_PYTHON_PASS requires that the clean environment genuinely had no Python
+installation. Clearing PYTHONHOME, PYTHONPATH, or PATH on a development machine
+is only partial evidence and must not be reported as NO_PYTHON_PASS.
+
+Return only CLEAN_MACHINE_RESULT.json. It contains no username, home path,
+WeChat identity, archive path, or chat content.

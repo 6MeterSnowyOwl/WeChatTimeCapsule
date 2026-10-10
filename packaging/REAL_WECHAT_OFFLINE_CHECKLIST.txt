@@ -1,0 +1,16 @@
+微信时间胶囊 v0.3.1 RC7 — Real WeChat Offline Manual Check
+==========================================================
+
+This is a manual test. Do not change network adapters, firewall, Defender,
+SmartScreen, or registry settings with automation.
+
+1. Keep the already logged-in Windows WeChat open.
+2. Temporarily disconnect the machine from the network using the normal Windows UI.
+3. Launch the packaged RC7.
+4. Confirm the current account and existing target list are readable.
+5. Open the existing chat and run offline integrity verification.
+6. Run Quick Save once; record success/failure without copying chat content.
+7. Reconnect the network using the normal Windows UI.
+8. Confirm the legacy snapshot count did not increase.
+
+Until a user completes this checklist, record REAL_WECHAT_OFFLINE_SAVE as BLOCKED.

@@ -1,0 +1,15 @@
+微信时间胶囊 — Third-Party Licenses
+=====================================
+
+完整第三方许可证与必要声明位于同目录的 `THIRD_PARTY_LICENSES/` 文件夹，
+入口为 `THIRD_PARTY_LICENSES/index.txt`。
+
+项目自身代码采用 Apache-2.0；第三方组件仍受各自许可证约束。
+Qt/PySide6 按实际交付模块核对许可选项；RC7 排除未使用且 GPL-only 的
+Qt VirtualKeyboard。详见 THIRD_PARTY_LICENSES/QT_LGPL_REVIEW.txt，及独立
+Qt-6.11.2-license-notices.zip 配套声明（涵盖全部源模块，不等于全部模块已交付）。
+imageio-ffmpeg Python wrapper 的 BSD-2-Clause 与内附 Gyan FFmpeg 7.1 原生
+GPL-3.0-or-later 二进制应分别核对；精确构建及依赖对应源码尚缺。
+FFMPEG_CORRESPONDING_SOURCE=BLOCKED
+LICENSE_DISTRIBUTION_CHECK=BLOCKED
+PUBLIC_RELEASE_READY=NO

@@ -1,0 +1,35 @@
+微信时间胶囊 — Third-party licenses
+=====================================
+
+The application is Apache-2.0; each component below remains under its own license.
+Qt/PySide6 license options and the excluded GPL-only VirtualKeyboard are recorded in QT_LGPL_REVIEW.txt.
+Native Gyan FFmpeg 7.1 is GPL-3.0-or-later; its exact corresponding-source obligation is BLOCKED.
+LICENSE_DISTRIBUTION_CHECK=BLOCKED; local RC7 candidate only, not cleared for external distribution.
+PyAutoGUI and its optional dependency stack are excluded from this frozen application.
+
+Component entries: 22
+
+- wechatauto-replica 1.2.1: 1 packaged license/notice file(s)
+- PySide6 6.11.2: 1 packaged license/notice file(s)
+- PySide6_Addons 6.11.2: 1 packaged license/notice file(s)
+- PySide6_Essentials 6.11.2: 1 packaged license/notice file(s)
+- shiboken6 6.11.2: 1 packaged license/notice file(s)
+- colorama 0.4.6: 1 packaged license/notice file(s)
+- cryptography 50.0.1: 3 packaged license/notice file(s)
+- cffi 2.1.1: 1 packaged license/notice file(s)
+- pycparser 3.0: 1 packaged license/notice file(s)
+- imageio-ffmpeg 0.6.0: 1 packaged license/notice file(s)
+- opencv-python 5.0.0.93: 4 packaged license/notice file(s)
+- numpy 2.5.3: 20 packaged license/notice file(s)
+- pillow 12.3.0: 1 packaged license/notice file(s)
+- psutil 7.2.2: 1 packaged license/notice file(s)
+- pyperclip 1.11.0: 2 packaged license/notice file(s)
+- pywin32 312: 16 packaged license/notice file(s)
+- uiautomation 2.0.29: 1 packaged license/notice file(s)
+- comtypes 1.4.16: 1 packaged license/notice file(s)
+- winsdk 1.0.0b10: 1 packaged license/notice file(s)
+- zstandard 0.25.0: 1 packaged license/notice file(s)
+- Python 3.12.14: 1 packaged license/notice file(s)
+- pyinstaller 6.22.2: 1 packaged license/notice file(s)
+
+No third-party license is relicensed under Apache-2.0.

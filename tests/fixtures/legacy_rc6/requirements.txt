@@ -1,0 +1,4 @@
+# Inspected upstream release commit:
+# https://github.com/fanyuantaier/wechatauto-replica/commit/798989c9b61066c120b59ceba636b557b776ff7f
+wechatauto-replica==1.2.1
+PySide6==6.11.2

@@ -1,0 +1,10 @@
+<Configuration>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>__RELEASE_FOLDER__</HostFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <Networking>Enable</Networking>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+</Configuration>

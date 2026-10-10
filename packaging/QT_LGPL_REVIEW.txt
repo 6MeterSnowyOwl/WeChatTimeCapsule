@@ -1,0 +1,44 @@
+Qt / PySide6 6.11.2 RC7 distribution review
+============================================
+
+The onedir build keeps Qt/PySide DLLs as separate dynamically loaded files.
+It does not statically link or modify Qt, use UPX, apply DRM, or prohibit
+replacement/relinking and reverse engineering for debugging LGPL components.
+The complete LGPLv3 and GPLv3 texts and installed wheel notices are included.
+License choices must be checked per shipped module, not inferred for all Qt
+modules from the PySide wheel's combined license expression.
+
+Qt Virtual Keyboard in Qt 6.11 is commercial/GPLv3-only, not an LGPL module.
+The Widgets GUI does not use it. RC7 excludes both Qt6VirtualKeyboard.dll and
+plugins/platforminputcontexts/qtvirtualkeyboardplugin.dll after Analysis and
+rejects either basename in the delivered-tree audit. qwindows.dll and native
+Windows input/IME support remain bundled. This record describes configuration;
+the actual delivered tree must still be checked for each build.
+
+Exact unmodified Qt 6.11.2 and PySide6/Shiboken6 6.11.2 source archives are reused
+as separate artifacts. Official origins and checked hashes are recorded in
+THIRD_PARTY_SOURCE.md and SOURCE_INDEX.txt. These archives are not runtime files.
+QtPdf is permitted under the applicable LGPL option; its PDFium and other
+third-party acknowledgements (including AGLFN) require the source-derived
+compliance companion. The Portable wheel notices alone are not a complete
+inventory of every native component's third-party acknowledgement.
+
+The application also needs imageio-ffmpeg's bundled native Gyan FFmpeg 7.1 for
+HEVC image decoding. The actual build is GPL-3.0-or-later and includes statically
+linked x264/x265. It is retained for functionality. Exact corresponding build
+and dependency source is still missing; generic FFmpeg upstream source or the
+imageio-ffmpeg Python wrapper's BSD license does not satisfy that missing item.
+
+FFMPEG_CORRESPONDING_SOURCE=BLOCKED
+LICENSE_DISTRIBUTION_CHECK=BLOCKED
+PUBLIC_RELEASE_READY=NO
+
+Official references:
+- https://doc.qt.io/qtforpython-6/licenses.html
+- https://doc.qt.io/qt-6/qtvirtualkeyboard-index.html#licenses
+- https://doc.qt.io/qt-6/qtpdf-index.html#licenses
+- https://www.qt.io/development/open-source-lgpl-obligations
+- https://ffmpeg.org/legal.html
+
+This is a technical distribution record, not a legal-compliance PASS.
+LEGAL_INTERPRETATION_REVIEW_RECOMMENDED.

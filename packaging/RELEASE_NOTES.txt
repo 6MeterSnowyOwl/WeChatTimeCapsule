@@ -1,0 +1,28 @@
+微信时间胶囊 v0.3.1 RC7
+========================
+
+- 承接当前主 GUI 已集成的历史读取流程，不增加产品功能。
+- 内部版本、窗口版本、Windows 资源和发行目录统一为 RC7；构建前与 spec
+  收集前均验证应用与资源版本一致性。
+- 新输出位于独立的 v0.3.1-rc7 目录。已有输出会阻止构建，旧 RC6 产物保留。
+- 使用固定 CPython 3.12.14、PyInstaller 6.22.2、PySide6/Shiboken6 6.11.2
+  与 wechatauto-replica 1.2.1，onedir 动态 Qt、无 UPX、未签名。
+- 排除未使用且 GPL-only 的 Qt6VirtualKeyboard.dll 与 qtvirtualkeyboardplugin.dll；
+  保留原生 Windows 输入插件，并在交付目录复核排除结果。
+- 历史样本包含 181 条占位、5 条部分支持及 1439 处尚未解释完整的表示差异；
+  不将其自动判为损坏，也不宣称全部聊天与附件已恢复。
+- WeChat 4.1.13.63、4.1.13.65 仅记录历史兼容性，本轮没有重新采集真实账号或
+  执行真实微信版本验收。Windows 11 开发机结果不能替代干净机器验收。
+- 首次使用说明明确账号级数据库与附件清点、微信进程内存中的数据库密钥、
+  必要本地缓存与隐私范围。本产品与腾讯、微信无隶属或合作关系，不上传聊天。
+
+本地候选构建仍可验证，但整体分发状态如下：
+FFMPEG_CORRESPONDING_SOURCE=BLOCKED
+LICENSE_DISTRIBUTION_CHECK=BLOCKED
+PUBLIC_RELEASE_READY=NO
+
+imageio-ffmpeg 内附的 Gyan FFmpeg 7.1（GPL-3.0-or-later，静态 x264/x265）
+保留以支持 HEVC 图片解码；精确构建及依赖对应源码仍缺。既有 Qt/PySide
+源码与第三方许可证文本不替代 FFmpeg 的对应源码要求。
+当前适用腾讯中国大陆服务条款风险为 UNKNOWN，未据此断言许可或违规。
+独立干净机器验收与本轮打包后真实微信完整流程验收仍为 BLOCKED。
